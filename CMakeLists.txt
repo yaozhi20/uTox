@@ -170,6 +170,9 @@ add_cflag("-Werror=implicit-function-declaration")
 add_cflag("-Wformat=0")
 add_cflag("-Wno-misleading-indentation")
 
+add_cflag("-Wno-error=incompatible-function-pointer-types")
+add_cflag("-Wno-error=int-conversion")
+
 ## Everything Else
 add_cflag("-fno-strict-aliasing")
 add_cflag("-fPIC")

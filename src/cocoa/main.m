@@ -363,8 +363,8 @@ void launch_at_startup(bool should) {
                             self.utox_window.contentView =
                                 [[[uToxView alloc] initWithFrame:(CGRect){ 0, 0, self.utox_window.frame.size }] autorelease];
 
-                            ui_size(settings.window_width, settings.window_height);
                             ui_rescale(ui_scale);
+                            ui_size(settings.window_width, settings.window_height);
 
                             /* start the tox thread */
                             thread(toxcore_thread, NULL);
@@ -495,7 +495,7 @@ int main(int argc, char const *argv[]) {
     setlocale(LC_ALL, "");
 
     /* set the width/height of the drawing region */
-    ui_size(settings.window_width, settings.window_height);
+    // ui_size(settings.window_width, settings.window_height);
 
     /* event loop */
     @autoreleasepool {
